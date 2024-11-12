@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
 <body>
     
-</body>
 <h1>Desafio de codificação</h1>
 
 <p>Resultado da soma de duas variáveis</p>
@@ -19,6 +19,17 @@ let x = 199.3;
 let y = 120;
 document.getElementById("demo").innerHTML = x + y;
 </script>
-</script>
+
+<div class="ParImpar">
+    <h2>Jogo de Par ou Ímpar</h2>
+    <p>Digite um número para verificar se é par ou ímpar:</p>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="VerificarParImpar()">Verificar</button>
+    <p id="resultado"></p>
+
+</div>
+
+</body>
+
 
 </html>

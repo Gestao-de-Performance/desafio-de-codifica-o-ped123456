@@ -1,5 +1,3 @@
-var x = 5;
-var y = 7
 let numeros = [5, 10, 17, 20, 29, 35, 41, 50, 61, 70];
 let soma = 0
 for (let i = 0; i < numeros.length; i++) {
@@ -20,3 +18,18 @@ function ehPrimos(numero) {
 
 let primos = numeros.filter(ehPrimos);
 console.log("Números primos no vetor:", primos);
+
+function verificarParImpar()
+{
+    const numero = document.getElementById("numero").value;
+    const resultado = document.getElementById("resultado");
+    if (numero === "") {
+        resultado.textContent = "Por favor, digite um número.";
+        return;
+    }
+    if (numero % 2 === 0) {
+        resultado.textContent = `${numero} é par.`;
+    } else {      
+             resultado.textContent = `${numero} é Ímpar.`;
+             }
+}
